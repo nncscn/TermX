@@ -1,51 +1,43 @@
 # ============================================================
-# TermX 闭源发布 .gitignore（白名单式：默认忽略一切）
-# 仅允许发布材料入仓，所有源码 / 构建产物 / 本地配置一律忽略
+# TermX .gitignore
+# 默认忽略一切，仅发布材料入仓
 # ============================================================
 
 # === 默认忽略根目录所有内容 ===
 /*
 
-# === 白名单：仅这些是发布材料 ===
+# === 白名单：发布材料 ===
 !README.md
 !doc/
-!installer/
-!resources/
 !.gitignore
 
-# === doc/ 内只保留文档与截图，排除脚本与临时文件 ===
+# === doc/ 内排除脚本与临时文件 ===
 doc/*.txt
 doc/*.log
 doc/*.tmp
 
 # ============================================================
-# 以下目录虽然被上面的 /* 规则忽略，
-# 但显式列出便于将来维护：这些是闭源源码 / 本地数据
+# 以下为本地工作目录与构建产物，不入仓
 # ============================================================
 
-# --- 源码（闭源，绝不入仓） ---
+# --- 源码与项目工程文件 ---
 src/
 electron/
 native/
 html/
+installer/
+resources/
 
-# --- 主进程 / 入口文件 ---
+# --- 配置文件 ---
 main.js
-electron.vite.config.ts
-electron-builder.yml
-tsconfig.json
-tsconfig.node.json
-tsconfig.web.json
-tsconfig.node.tsbuildinfo
-tsconfig.web.tsbuildinfo
-tailwind.config.js
-postcss.config.js
+*.config.js
+*.config.ts
+tsconfig*.json
+tsconfig*.tsbuildinfo
 
-# --- 辅助脚本（含源码逻辑，不入仓） ---
-preview.py
-stat.py
+# --- 辅助脚本 ---
+*.py
 gen-doc.ps1
-gen_doc.py
 verify_doc.py
 verify_out.txt
 
@@ -66,16 +58,10 @@ node_modules/
 
 # --- 日志 ---
 *.log
-*.err.log
-*.out.log
-dev-run.claude.*.log
 
-# --- IDE / 编辑器 / 工具缓存 ---
+# --- IDE 与编辑器配置 ---
 .vscode/
 .idea/
-.zcode/
-.claude/
-.playwright-mcp/
 *.swp
 *.swo
 *~
@@ -93,9 +79,6 @@ ehthumbs.db
 *.key
 *.pem
 
-# --- TypeScript 增量缓存 ---
+# --- TypeScript / Rust 增量缓存 ---
 *.tsbuildinfo
-
-# --- Rust 构建产物（native 目录的残留） ---
 target/
-Cargo.lock
