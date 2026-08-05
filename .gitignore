@@ -8,9 +8,14 @@
 
 # === 白名单：发布材料 ===
 !README.md
+!CONTRIBUTING.md
+!CODE_OF_CONDUCT.md
+!SECURITY.md
+!CHANGELOG.md
 !doc/
 !.github/
 !.gitignore
+!.gitattributes
 
 # === doc/ 内排除脚本与临时文件 ===
 doc/*.txt
