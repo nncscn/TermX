@@ -1,0 +1,101 @@
+# ============================================================
+# TermX 闭源发布 .gitignore（白名单式：默认忽略一切）
+# 仅允许发布材料入仓，所有源码 / 构建产物 / 本地配置一律忽略
+# ============================================================
+
+# === 默认忽略根目录所有内容 ===
+/*
+
+# === 白名单：仅这些是发布材料 ===
+!README.md
+!doc/
+!installer/
+!resources/
+!.gitignore
+
+# === doc/ 内只保留文档与截图，排除脚本与临时文件 ===
+doc/*.txt
+doc/*.log
+doc/*.tmp
+
+# ============================================================
+# 以下目录虽然被上面的 /* 规则忽略，
+# 但显式列出便于将来维护：这些是闭源源码 / 本地数据
+# ============================================================
+
+# --- 源码（闭源，绝不入仓） ---
+src/
+electron/
+native/
+html/
+
+# --- 主进程 / 入口文件 ---
+main.js
+electron.vite.config.ts
+electron-builder.yml
+tsconfig.json
+tsconfig.node.json
+tsconfig.web.json
+tsconfig.node.tsbuildinfo
+tsconfig.web.tsbuildinfo
+tailwind.config.js
+postcss.config.js
+
+# --- 辅助脚本（含源码逻辑，不入仓） ---
+preview.py
+stat.py
+gen-doc.ps1
+gen_doc.py
+verify_doc.py
+verify_out.txt
+
+# --- 构建产物 ---
+dist/
+out/
+build/
+*.exe
+*.msi
+*.appx
+*.snap
+*.deb
+*.rpm
+*.dmg
+
+# --- 依赖 ---
+node_modules/
+
+# --- 日志 ---
+*.log
+*.err.log
+*.out.log
+dev-run.claude.*.log
+
+# --- IDE / 编辑器 / 工具缓存 ---
+.vscode/
+.idea/
+.zcode/
+.claude/
+.playwright-mcp/
+*.swp
+*.swo
+*~
+
+# --- 操作系统垃圾 ---
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# --- 本地环境变量 / 密钥 ---
+.env
+.env.local
+*.local
+*.key
+*.pem
+
+# --- TypeScript 增量缓存 ---
+*.tsbuildinfo
+
+# --- Rust 构建产物（native 目录的残留） ---
+target/
+Cargo.lock
