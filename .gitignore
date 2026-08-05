@@ -9,6 +9,7 @@
 # === 白名单：发布材料 ===
 !README.md
 !doc/
+!.github/
 !.gitignore
 
 # === doc/ 内排除脚本与临时文件 ===
