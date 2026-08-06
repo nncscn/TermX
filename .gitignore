@@ -8,6 +8,7 @@
 
 # === 白名单：发布材料 ===
 !README.md
+!README.en.md
 !CONTRIBUTING.md
 !CODE_OF_CONDUCT.md
 !SECURITY.md
