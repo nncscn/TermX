@@ -11,7 +11,7 @@
 [![Data Local](https://img.shields.io/badge/%E6%95%B0%E6%8D%AE%E6%9C%AC%E5%9C%B0-informational?style=flat-square)](#数据安全)
 [![Website](https://img.shields.io/badge/%E5%AE%98%E7%BD%91-termx.cn-4f7cff?style=flat-square)](https://termx.cn/)
 [![Platform](https://img.shields.io/badge/%E5%B9%B3%E5%8F%B0-Windows%2010%2B-0078D4?style=flat-square)](#下载)
-[![Version](https://img.shields.io/badge/version-1.0.24-24292e?style=flat-square)](../../releases)
+[![Version](https://img.shields.io/badge/version-1.0.27-24292e?style=flat-square)](../../releases)
 [![QQ Group](https://img.shields.io/badge/QQ%E7%BE%A4-1095707034-EB1923?style=flat-square)](#社区)
 
 [官网](https://termx.cn/) · [下载最新版](../../releases) · [个人永久免费 · 禁止商用](#授权与免费) · [QQ 群 1095707034](#社区)
@@ -257,7 +257,7 @@ TermX 自发布以来保持稳定迭代，每次更新都通过应用内自动�
 <table>
   <tr>
     <td width="50%" valign="middle">
-      <b>TermX-Setup-1.0.24-x64.exe</b><br>
+      <b>TermX-Setup-1.0.27-x64.exe</b><br>
       <sub>Windows 10 1809+ / Windows 11 (x64) · 约 82 MB</sub>
     </td>
     <td width="50%" align="right" valign="middle">
@@ -270,7 +270,7 @@ TermX 自发布以来保持稳定迭代，每次更新都通过应用内自动�
 
 ### 安装步骤
 
-1. 双击 `TermX-Setup-1.0.24-x64.exe` 启动安装向导
+1. 双击 `TermX-Setup-1.0.27-x64.exe` 启动安装向导
 2. 按向导完成：欢迎 → 许可协议 → 安装目录 → 数据目录 → 安装 → 完成
 3. 安装完成后自动启动；之后可从开始菜单或桌面快捷方式启动
 4. 首次启动添加第一台服务器，开始使用
